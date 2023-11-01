@@ -221,12 +221,12 @@ button {
     text-align: justify;
     padding-top: 30px;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .card-container {
     background: linear-gradient(71deg, #080509, #78B9DB, #080509);
-    width: 490px;
+    width: 590px;
     height: 340px;
     background-clip: padding-box;
     border-radius: 45px;
