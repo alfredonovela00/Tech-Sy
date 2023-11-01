@@ -77,7 +77,6 @@
     color: white;
     font-size: 1.2em;
     font-weight: bold;
-
 }
 
 .menu>li>a:hover {
@@ -201,14 +200,14 @@ button {
     }
 }
 
-@media (max-width: 700px) {
+/* Estilos para dispositivos móveis aqui */
+@media (max-width: 767px) {
 
     #home {
         background: rgba(0, 0, 0, 0.7) url('../IMAGES/responsive/home-responsive-3.png');
         background-blend-mode: darken;
         background-repeat: no-repeat;
         height: 100vh;
-
         background-size: left left;
     }
 
@@ -262,14 +261,45 @@ button {
 
     .welcome-container h1 {
         padding-top: 15%;
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-transform: uppercase;
     }
 
     .container-text {
-        font-size: 1.6rem;
+        font-size: 1rem;
         padding-top: 5%;
     }
 
+    button {
+        width: 280px;
+        padding: 15px;
+        margin-top: 20px;
+        cursor: pointer;
+        border: none;
+        margin-left: 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: var(--Title);
+        font-size: 1rem;
+    }  
 }
+
+/* Estilos para tablets aqui */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  
+   
+    
+    .welcome-container h1 {
+        padding-top: 20%;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+
+    .container-text {
+        font-size: 1.8rem;
+        padding-top: 5%;
+    }
+
+  }
 

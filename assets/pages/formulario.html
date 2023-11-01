@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cotação de Consultoria de TI</title>
+    <link rel="stylesheet" href="../CSS/formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <form action="seu_script_de_processamento.php" method="post" id="cotationForm">
+        <h1>Formulário de Cotação de Consultoria de TI</h1>
+        <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-envelope icon"></i>
+            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-phone icon"></i>
+            <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone" required>
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-building icon"></i>
+            <input type="text" id="empresa" name="empresa" placeholder="Nome da Empresa (se aplicável)">
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-cogs icon"></i>
+            <select id="servico" name="servico" required>
+                <option value="consultoria-seguranca">Consultoria em Segurança de TI</option>
+                <option value="desenvolvimento-software">Desenvolvimento de Software</option>
+                <option value="suporte-tecnico">Suporte Técnico</option>
+            </select>
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-comment icon"></i>
+            <textarea id="descricao" name="descricao" placeholder="Descrição do Projeto" required></textarea>
+        </div>
+
+        <div class="input-container">
+            <input type="radio" id="email-contato" name="preferencia-contato" value="email" required>
+            <label for="email-contato">Contato por E-mail</label>
+        </div>
+
+        <div class="input-container">
+            <input type="radio" id="telefone-contato" name="preferencia-contato" value="telefone">
+            <label for="telefone-contato">Contato por Telefone</label>
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-upload icon"></i>
+            <input type="file" id="anexos" name="anexos">
+        </div>
+
+        <input type="submit" value="Enviar Solicitação">
+</body>
+
+</html>
