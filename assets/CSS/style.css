@@ -13,6 +13,9 @@ a[href^="#"]:hover {
 }
 
 
+::-webkit-scrollbar{
+    display: none;
+}
 
 :root {
     --logo: 'Salsa', cursive;
@@ -193,6 +196,10 @@ button {
     color: black;
 }
 
+#services{
+    height: 100vh;
+}
+
 #services h1 {
     padding: 50px;
     text-align: center;
@@ -202,32 +209,39 @@ button {
     font-weight: bold;
 }
 
-.card-icon{
-    color: black;
-    padding: 20px;
+.card-icon a{
+    color: black;    
+}
+
+.card-icon a:hover{
+    color: white;    
     display: flex;
-    align-items: center; 
     justify-content: center;
+    align-items: center;
+    justify-items: center;
+    transition: ease-in .5s;
 }
 
 
 .card-content h2{
-    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 1rem;
     font-weight: bold;
-    text-align: center;
+    
 }
 
 .card-content p{
     text-align: justify;
     padding-top: 30px;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .card-container {
     background: linear-gradient(71deg, #080509, #78B9DB, #080509);
-    width: 590px;
-    height: 340px;
+    width: 480px;
+    height: 350px;
     background-clip: padding-box;
     border-radius: 45px;
     padding: 40px;
