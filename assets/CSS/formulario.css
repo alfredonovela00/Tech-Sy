@@ -4,22 +4,17 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+
    
 }
 
-.h1-form{
-    text-align: center;
-    color: #333;
-    padding-top: 120px;
-}
-
 .formulario{
-  
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
+    min-height: 100vh;
 }
 
 form {
@@ -95,7 +90,8 @@ input[type="submit"]:hover {
 
 @media (max-width: 600px) {
     form {
-        max-width: 100%;
+        max-width: 80%;
+        
     }
     .icon {
         left: 5px;
