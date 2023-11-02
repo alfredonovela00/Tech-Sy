@@ -338,6 +338,13 @@ button {
         text-transform: uppercase;
     }
 
+    .card-services {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
     .container-text {
         font-size: 1rem;
         padding-top: 5%;
@@ -362,16 +369,32 @@ button {
         gap: 20px;
         justify-content: center;
     }
-    
 
+    .card-container {
+        background: linear-gradient(71deg, #080509, #78B9DB, #080509);
+        width: 380px;
+        height: 350px;
+        background-clip: padding-box;
+        border-radius: 45px;
+        padding: 40px;
+        border: 2px solid transparent;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .card-content h2{
+        text-transform: uppercase;
+        padding-top: 20px;
+        font-size: 0.9rem;
+        font-weight: bold;
+        
+    }
+    
+    
    
 }
 
 /* Estilos para tablets aqui */
 @media (min-width: 768px) and (max-width: 1023px) {
-
-
-
 
     .welcome-container h1 {
         padding-top: 20%;
@@ -382,6 +405,10 @@ button {
     .container-text {
         font-size: 1.8rem;
         padding-top: 5%;
+    }
+
+    #home{
+        height: 100vh;
     }
 
 }
