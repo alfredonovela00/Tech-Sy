@@ -13,7 +13,7 @@ a[href^="#"]:hover {
 }
 
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -196,7 +196,7 @@ button {
     color: black;
 }
 
-#services{
+#services {
     height: 100vh;
 }
 
@@ -209,12 +209,12 @@ button {
     font-weight: bold;
 }
 
-.card-icon a{
-    color: black;    
+.card-icon a {
+    color: black;
 }
 
-.card-icon a:hover{
-    color: white;    
+.card-icon a:hover {
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,15 +223,15 @@ button {
 }
 
 
-.card-content h2{
+.card-content h2 {
     text-transform: uppercase;
     padding-top: 20px;
     font-size: 1rem;
     font-weight: bold;
-    
+
 }
 
-.card-content p{
+.card-content p {
     text-align: justify;
     padding-top: 30px;
     font-size: 1rem;
@@ -259,6 +259,7 @@ button {
 /* Animação de entrada */
 #home {
     animation: fadeIn 1s ease-in-out;
+    height: 100vh;
 }
 
 @keyframes fadeIn {
@@ -278,10 +279,10 @@ button {
 
     #home {
         background: rgba(0, 0, 0, 0.7) url('../IMAGES/responsive/home-responsive-3.png');
+        height: 70vh;
         background-blend-mode: darken;
         background-repeat: no-repeat;
-        height: 100vh;
-        background-size: left left;
+
     }
 
     .menu-button-container {
@@ -338,13 +339,6 @@ button {
         text-transform: uppercase;
     }
 
-    .card-services {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-    }
-
     .container-text {
         font-size: 1rem;
         padding-top: 5%;
@@ -363,15 +357,16 @@ button {
         font-size: 1rem;
     }
 
-    .card-services {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
+    #services h1 {
+        padding: 50px;
+        text-align: center;
+        font-family: var(--logo);
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: bold;
     }
 
     .card-container {
-        background: linear-gradient(71deg, #080509, #78B9DB, #080509);
         width: 380px;
         height: 350px;
         background-clip: padding-box;
@@ -381,16 +376,31 @@ button {
         font-family: 'Montserrat', sans-serif;
     }
 
-    .card-content h2{
+    .card-content h2 {
         text-transform: uppercase;
         padding-top: 20px;
         font-size: 0.9rem;
         font-weight: bold;
-        
+
     }
-    
-    
-   
+
+
+    .card-content p {
+        text-align: justify;
+        padding-top: 30px;
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+
+    .card-services {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+
+
 }
 
 /* Estilos para tablets aqui */
@@ -405,10 +415,6 @@ button {
     .container-text {
         font-size: 1.8rem;
         padding-top: 5%;
-    }
-
-    #home{
-        height: 100vh;
     }
 
 }
